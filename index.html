@@ -1352,6 +1352,17 @@
     <script src="assets/js/wow.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+    <script>
+            function loader() {
+        $(window).on('load', function() {
+            // Animate loader off screen
+            $(".preloader").addClass('loaded');                    
+            $(".preloader").delay(600).fadeOut();                       
+        });
+    }
+
+    loader();
+    </script>
 </body>
 
 </html>
